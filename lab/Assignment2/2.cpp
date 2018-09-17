@@ -9,12 +9,15 @@ void sort(double a[],int low,int high);
 int main()
 {
     int a[]={1,3,4,8,2,9};
-    double b[]={1.4,1.3,1.8,1.6,1.7};
-    sort(a,0,4);
-    sort(b,0,4);
+    double b[]={1.4,1.3,1.8,1.6,1.7,1.1};
+    sort(a,0,5);
+    sort(b,0,5);
     for(int i=0;i<6;i++)
-        printf("%d ",a[i]);
-
+        cout<<a[i] << "  ";
+    cout << endl;
+    for(int i=0;i<6;i++)
+        cout<<b[i] << "  ";
+    cout << endl;
         return 0;
 }
 void swap(int* a,int* b)
